@@ -1,6 +1,6 @@
 # TEMPLATE for the rolling nightly cask. The nightly workflow (release-nightly.yml)
-# renders 1.0.0-nightly.738 (full pre-release semver, so `brew upgrade` sees each new build),
-# a1757dd043872b2a6bfa2bf1b4e9c06005bbd679a113e1c049bc90096d104c7b (the published DMG's checksum) and klardrop-1.0.0.dmg (the version-stamped DMG filename),
+# renders 1.0.0-nightly.739 (full pre-release semver, so `brew upgrade` sees each new build),
+# ad3a9e532958b5dedfaccfd032495a5a320385607ab44030fae023ba6c491240 (the published DMG's checksum) and klardrop-1.0.0.dmg (the version-stamped DMG filename),
 # then pushes the result to the tap as Casks/klardrop-nightly.rb.
 #
 # Install:  brew install --cask carlonzo/klardrop/klardrop-nightly
@@ -10,8 +10,8 @@
 # secrets present) — an unsigned nightly installs but Gatekeeper blocks first launch.
 
 cask "klardrop-nightly" do
-  version "1.0.0-nightly.738"
-  sha256 "a1757dd043872b2a6bfa2bf1b4e9c06005bbd679a113e1c049bc90096d104c7b"
+  version "1.0.0-nightly.739"
+  sha256 "ad3a9e532958b5dedfaccfd032495a5a320385607ab44030fae023ba6c491240"
 
   url "https://github.com/carlonzo/klardrop/releases/download/nightly/klardrop-1.0.0.dmg",
       verified: "github.com/carlonzo/klardrop/"
